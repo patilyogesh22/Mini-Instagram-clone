@@ -12,7 +12,7 @@ It implements the core backend and frontend features of Instagram, including aut
     Engagement features (likes & comments)
     Personalized feed generation
 
-# ✅ Features Implemented (As Per Task PDF)
+# ✅ Features Implemented
 
 1️⃣ User Authentication
 
@@ -54,14 +54,20 @@ It implements the core backend and frontend features of Instagram, including aut
 
 
 # 🎨 Frontend Screens
+
 🔐 Login & Signup
+
 🏠 Home Feed
+
 ➕ Create Post
+
 👤 Profile Page
+
 📄 Post Detail Page
 
 
 # 🛠️ Technology Stack
+
 # Backend Technology
 
     Node.js
