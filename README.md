@@ -1,85 +1,174 @@
-# 📸 Instagram Mini Clone
+## Task 01
+
+#  📸 Instagram Mini Clone
+
+## Project Overview
 
 This project is a Mini Instagram-style web application developed as part of an assignment task.
 It implements the core backend and frontend features of Instagram, including authentication, user relationships, post creation, likes, comments, and a personalized feed.
 
-# 🎯 Task Objective
 
-    To build a basic Instagram-like application that demonstrates:
-    Secure user authentication
-    Follow / unfollow relationships
-    Content creation (posts)
-    Engagement features (likes & comments)
-    Personalized feed generation
+## ✅ Features Implemented
 
-# ✅ Features Implemented
+### Authentication
 
-1️⃣ User Authentication
+* User signup and login
+* Secure password hashing using bcrypt
+* JWT-based authentication
+* Protected routes for authenticated users
 
-        User signup and login
-        Password hashing using bcrypt
-        JWT-based authentication for protected routes
+---
 
-2️⃣ Follow System
+### Follow System
 
-        Users can follow other users
-        Users can unfollow users
-        Proper follower–following relationships maintained in the database
+* Follow other users
+* Unfollow users
+* Maintain followers and following relationships
 
-3️⃣ Post Creation
+---
 
-        Only authenticated users can create posts
-        Each post contains:
-        Image URL
-        Caption
+### Post Management
 
-4️⃣ Likes
+* Create posts with:
+  * Image upload using Cloudinary
+  * Caption support
+* View posts created by followed users
+* Delete own posts
 
-        Users can like posts
-        Users can unlike posts
-        Like count updates dynamically
+---
 
-5️⃣ Comments
+### Likes
 
-        Users can comment on posts
-        Each comment displays:
-        Comment text
-        User who commented
+* Like posts
+* Unlike posts
+* Dynamic like count updates without page refresh
 
-6️⃣ Feed
+---
 
-        Personalized feed API
-        Shows posts created by users the logged-in user follows
-        Feed updates dynamically without page refresh
+### Comments
 
+* Users can comment on posts
+* Each comment displays:
+* Comment text
+* User who commented
 
-# 🎨 Frontend Screens
+---
 
-🔐 Login & Signup
+### Personalized Feed
 
-🏠 Home Feed
+* Personalized feed API
+* Shows posts created by users the logged-in user follows
+* Feed updates dynamically without page refresh
+---
 
-➕ Create Post
+### Profile Management
 
-👤 Profile Page
+* View user profile
+* Update profile information
+* Upload profile image
+* View followers and following count
 
-📄 Post Detail Page
+---
 
+## 🎨 Frontend Screens
 
-# 🛠️ Technology Stack
+* 🔐 Login & Signup
 
-# Backend Technology
+* 🏠 Home Feed
 
-    Node.js
-    Express.js
-    MongoDB
-    JWT (Authentication)
-    bcryptjs
-    Cloudinary (image storage)
+* ➕ Create Post
 
-# Frontend Technology
+* 👤 Profile Page
 
-    React.js
-    React Router DOM
-    Redux Toolkit
-    Tailwind CSS
+* 📄 Post Detail Page
+
+## 🛠️ Tech Stack
+
+### Backend Technology
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT (JSON Web Tokens)
+* bcryptjs
+* Cloudinary
+* cors
+---
+
+### Frontend Technology
+
+* React.js
+* React Router DOM
+* Redux Toolkit
+* Axios
+* Tailwind CSS
+* react-icons
+---
+
+## 📂 Project Structure
+
+```
+Mini-Instagram-clone/
+    │
+    ├── backend/
+    │   ├── controllers/
+    │   ├── models/
+    │   ├── routes/
+    │   ├── middleware/
+    │   └── server.js
+    │
+    ├── frontend/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── redux/
+    │   └── App.jsx
+    │
+    └── README.md
+```
+
+---
+## How to Run the Project
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+Create a `.env` file inside the backend directory:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_key
+CLOUDINARY_API_SECRET=your_secret
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open your browser and visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Learning Outcomes
+
+* Implemented secure authentication using JWT
+* Understood MongoDB schema relationships
+* Built RESTful APIs using Express.js
+* Managed frontend state efficiently using Redux Toolkit
+* Gained hands-on experience with full-stack application development
